@@ -15,6 +15,7 @@ export default function Home() {
       <Unauthenticated>
         <SignInButton />
       </Unauthenticated>
+      <div> Hello World </div>
     </>
   )
 }
