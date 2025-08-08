@@ -1,7 +1,7 @@
 'use client'
 
 import * as React from 'react'
-import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs'
+import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 import Link from 'next/link'
 import Image from 'next/image'
 import { ConciergeBell, Brain, Shield } from 'lucide-react'
@@ -22,7 +22,7 @@ function Button({ className, variant = 'primary', ...props }: ButtonProps) {
   return <button className={cn(base, styles, 'px-5 py-2.5', className)} {...props} />
 }
 
-interface CardProps extends React.HTMLAttributes<HTMLDivElement> {}
+type CardProps = React.HTMLAttributes<HTMLDivElement>
 function Card({ className, ...props }: CardProps) {
   return (
     <div
